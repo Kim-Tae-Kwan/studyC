@@ -8,7 +8,9 @@
 int main()
 {
     printf("Hello World!\n");
+    printf("Hi second again\n");
 
+    
     //type here
     
     system("pause");
