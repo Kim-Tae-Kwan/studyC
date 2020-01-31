@@ -8,9 +8,10 @@
 int main()
 {
     printf("Hello World!\n");
-    printf("%s\n", "Hi second again");
-    printf("%.1le\n",3.155);
-
+    printf("%lf\n",3.14);
+    printf("%.1lf\n",3.141592);
+    printf("%.10lf\n",3.14);
+    printf("%.1lf + %.1lf = %.1lf\n", 10.2, 3.4, 10.2 + 3.4);
     
     //type here
     
