@@ -8,10 +8,11 @@
 int main()
 {
     printf("Hello World!\n");
-    printf("Hi second again\n");
+    printf("%s\n", "Hi second again");
+    printf("%.1le\n",3.155);
 
     
-    //type here
+    //type here ¤·¤·
     
     system("pause");
     return 0;
