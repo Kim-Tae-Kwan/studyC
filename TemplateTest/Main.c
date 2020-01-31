@@ -12,7 +12,7 @@ int main()
     printf("%.1le\n",3.155);
 
     
-    //type here ¤·¤·
+    //type here
     
     system("pause");
     return 0;
