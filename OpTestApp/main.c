@@ -13,8 +13,18 @@
 // 메인함수
 int main(void) 
 {
-	printf("Hello World!\n");
-    // type here.zxc
+    int a = 10, b = 12;
+    int res = 0;
+    
+    printf("a&b = %d\n", (a&b));
+    printf("a^b = %d\n", (a ^ b));
+    printf("a|b = %d\n", (a | b));
+    printf("~a = %d\n", (~a));
+    printf("a<<1 = %d\n", (a<<1));
+    printf("a>>1 = %d\n", (a >> 1));
+
+
+
 	system("pause");
 	return EXIT_SUCCESS;
 }
