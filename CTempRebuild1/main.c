@@ -14,19 +14,20 @@
 
 // 메인함수
 
-#define LEFT 75
-#define RIGHT 77
-#define UP 72
-#define DOWN 80
+int stop = 0;
 
-void key();
- // 1. 매크로로 좌우상하를 설정한다.
+void Key();
+ 
 int main(void) 
-{
+{ 
    
     while (1) 
     {
-        key();
+       
+        Key();
+        if (stop == 1)
+            break;
+        
     }
     return 0;
 
@@ -35,12 +36,14 @@ int main(void)
 void Key()
 {
     char c;
+    
+    
     if (_kbhit())
-    {               // 2. while문안에서 키보드 눌렸을 시 if문이 실행된다.
-        c = _getch();           // 3. 방향키가 입력됬을 때 224 00 이 버퍼에 있다. 224부터 빼준다. 
+    {               
+        c = _getch();           
         if ((c == 0x58) || (c == 0x78))
         {
-            printf("x\n");
+            stop = 1;
         }
     }
 }
