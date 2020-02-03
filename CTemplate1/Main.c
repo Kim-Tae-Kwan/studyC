@@ -9,7 +9,7 @@ int main()
 {
     printf("Hello World!\n");
 
-    //type heresdf
+    //type here
     
     system("pause");
     return 0;
