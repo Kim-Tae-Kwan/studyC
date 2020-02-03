@@ -14,7 +14,7 @@
 int main(void) 
 {
 	printf("Hello World!\n");
-    // type here.
+    // type here.zxc
 	system("pause");
 	return EXIT_SUCCESS;
 }
