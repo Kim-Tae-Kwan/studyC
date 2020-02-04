@@ -11,21 +11,17 @@
 #include <stdlib.h>
 
 // 메인함수
-int main(void) 
+int main(void)
 {
-    char small, cap = 'H';
+	int num, grade;
 
-    if ((cap >= 'A') && (cap <= 'Z'))
-    {
-        small = cap + ('a' - 'A');
-    }
-
-    printf("대문자 : %c %c", cap, '\n');
-    printf("소문자 : %c\n", small);
-
-
-
-
+	printf("학번 입력 : ");
+	scanf("%d", &num);
+	getchar();
+	printf("학점 입력 : ");
+	//grade = getchar();
+	scanf("%c", &grade);
+	printf("학번 : %d, 학점 : %c", num, grade);
 
 
 	system("pause");
