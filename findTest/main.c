@@ -10,16 +10,17 @@ void wr(char ch[]);
 
 int main() 
 {
-    int count;
+    int count = 0;
     struct _finddata_t c_file;
     intptr_t hFile;
-    char ary[][80] = {0};
+    char ary[5][80] = {'\0'};
+    int res = 0;
     
     //hFile = _findfirst("C:\\Users\\kyj\\Documents\\*.txt", &c_file);
     while (1)
     {
-        int i = 1;
-        int j = 0;
+        int i;
+        
         hFile = _findfirst("C:\\Users\\kyj\\Documents\\*.txt", &c_file);
 
         if (hFile == -1)
@@ -28,18 +29,29 @@ int main()
         }
         else
         {
+
             do
             {
-                ary[i][80] = c_file.name;
-                
-                for (j; j < i; j++)
+                for (i = 0; i < 5; i++);
                 {
-                    if (ary[j][80] == c_file.name)
-                        continue;
+                    if (strcmp(ary[i], c_file.name) == 0)
+                    {
+                        res = 0;
+                        break;
+                    }
+                    res = 1;
                 }
-                wr(c_file.name);
+                if (res == 1)
+                {
+                    ary[count][80] = c_file.name;
+                    count++;
+                    wr(c_file.name);
+                }
                 
-                i++;
+                
+                
+                
+                
 
             } while (_findnext(hFile, &c_file) == 0);
             _findclose(hFile);

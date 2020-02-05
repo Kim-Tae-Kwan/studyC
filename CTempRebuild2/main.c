@@ -13,14 +13,10 @@
 // 메인함수
 int main(void) 
 {
-    int i;
-    int j;
+    char ary[100][80];
+   // scanf("%s", ary[0][80]);
 
-    for (i = 0; i < 0; i++)
-    {
-        printf("a\n");
-    }
-
+    printf("%d %d\n", sizeof(ary), sizeof(ary[0]));
 
 	
     // type here.
