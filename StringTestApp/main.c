@@ -17,7 +17,8 @@ int main(void)
 
 	printf("학번 입력 : ");
 	scanf("%d", &num);
-	getchar();
+	getchar(); 
+
 	printf("학점 입력 : ");
 	//grade = getchar();
 	scanf("%c", &grade);

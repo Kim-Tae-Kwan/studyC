@@ -6,6 +6,8 @@
 #include <string.h> 
 
 
+
+
 int main() 
 {
     char* buffer;
@@ -13,16 +15,14 @@ int main()
     int count;
     struct _finddata_t c_file;
     intptr_t hFile;
+    char ary[80];
     
     hFile = _findfirst("C:\\Users\\PKNU\\Documents\\*.txt", &c_file);
     while (1)
     {
-
-
         if (hFile == -1)
         {
             printf(":: 파일이 없음 ::\n");
-
         }
         else
         {
@@ -41,6 +41,7 @@ int main()
                 fclose(fp);
                 free(buffer);
                 printf("___________________________\n");
+
             } while (_findnext(hFile, &c_file) == 0);
             _findclose(hFile);
 
@@ -49,3 +50,4 @@ int main()
     }
     return 0;
 }
+

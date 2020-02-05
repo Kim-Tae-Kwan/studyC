@@ -14,27 +14,27 @@
 
 int main()
 {
-    char* buffer;
-    int size;
-    int count;
+	char* buffer;
+	int size;
+	int count;
 
-    FILE* fp = fopen("C:\\Users\\PKNU\\Documents\\asdf.txt", "r");    
+	FILE* fp = fopen("C:\\Users\\PKNU\\Documents\\asdf.txt", "r");
 
-    fseek(fp, 0, SEEK_END);    
-    size = ftell(fp);          
+	fseek(fp, 0, SEEK_END);
+	size = ftell(fp);
 
-    buffer = malloc(size + 1);    
-    memset(buffer, 0, size + 1);  
-     
-    fseek(fp, 0, SEEK_SET);               
-    fread(buffer, size, 1, fp);   
+	buffer = malloc(size + 1);
+	memset(buffer, 0, size + 1);
 
-    printf("%s\n", buffer);
-          fclose(fp);     
+	fseek(fp, 0, SEEK_SET);
+	fread(buffer, size, 1, fp);
 
-    free(buffer);  
-    
-    system("pause");
+	printf("%s\n", buffer);
+	fclose(fp);
 
-    return 0;
+	free(buffer);
+
+	system("pause");
+
+	return 0;
 }
