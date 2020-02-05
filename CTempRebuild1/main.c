@@ -14,9 +14,10 @@
 
 // 메인함수
 
-int stop = 0;
 
-void Key();
+
+int Key();
+int res = 0;
  
 int main(void) 
 { 
@@ -24,8 +25,8 @@ int main(void)
     while (1) 
     {
        
-        Key();
-        if (stop == 1)
+        res=Key();
+        if (res == 1)
             break;
         
     }
@@ -33,17 +34,15 @@ int main(void)
 
 }
 
-void Key()
+int Key()
 {
     char c;
-    
-    
     if (_kbhit())
     {               
         c = _getch();           
         if ((c == 0x58) || (c == 0x78))
         {
-            stop = 1;
+            return 1;
         }
     }
 }
