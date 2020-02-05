@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-int cmp();
+int cmp(char a,char b);
 // 메인함수
 int main(void)
 {
@@ -76,8 +76,10 @@ int main(void)
 	
 	while (1)
 	{
-		
-		res=cmp();
+		char str1[80];
+		char str2[80];
+
+		res=cmp(str1,str2);
 		if (res == 1)
 			break;
 		
@@ -87,22 +89,21 @@ int main(void)
 	return EXIT_SUCCESS;
 }
 
-int cmp()
+int cmp(char a[],char b[])
 {
-	char str1[80];
-	char str2[80];
+	
 
 	printf("2개의 과일 이름 : ");
-	scanf("%s%s", str1, str2);
+	scanf("%s%s", a, b);
 
-	if (str1[0] == 'X' || str2[0] == 'X')
+	if (a[0] == 'X' || b[0] == 'X')
 		return 1;
 
-	printf("사전에 나중에 나오는 과일 : ");
-	if (strcmp(str1, str2) < 0)
-		printf("%s\n", str1);
+	printf("사전에 먼저 나오는 과일 : ");
+	if (strcmp(a, b) < 0)
+		printf("%s\n", a);
 	else
-		printf("%s\n", str2);
+		printf("%s\n", b);
 
 	return 0;
 }
