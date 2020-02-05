@@ -18,7 +18,7 @@ int main()
 	int size;
 	int count;
 
-	FILE* fp = fopen("C:\\Users\\PKNU\\Documents\\asdf.txt", "r");
+	FILE* fp = fopen("C:\\Users\\kyj\\Documents\\apple.txt", "r");
 
 	fseek(fp, 0, SEEK_END);
 	size = ftell(fp);
