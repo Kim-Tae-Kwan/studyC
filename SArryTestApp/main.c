@@ -14,13 +14,15 @@
 // 메인함수
 int main(void)
 {
-	char score[5][20];
+    char score[5][20];
 
     int i;
-    int count;
+    int count=0;
 
     count = sizeof(score) / sizeof(score[0]);
+
     printf("%d %d\n", sizeof(score), sizeof(score[0]));
+
     for (i = 0; i < count; i++)
     {
         scanf("%s", score[i]);
@@ -32,6 +34,6 @@ int main(void)
     }
     printf("\n");
 
-	system("pause");
-	return EXIT_SUCCESS;
+    system("pause");
+    return EXIT_SUCCESS;
 }
