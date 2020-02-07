@@ -22,11 +22,13 @@ int main()
         int i;
         
         hFile = _findfirst("C:\\Users\\kyj\\Documents\\*.txt", &c_file);
+        _findnext(hFile, &c_file);
 
         if (hFile == -1)
         {
-            printf(":: 파일이 없음 ::\n");
+            continue;
         }
+
         else
         {
 
