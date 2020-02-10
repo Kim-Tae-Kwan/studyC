@@ -31,7 +31,6 @@ int main(void)
 {
 	struct student tk;
 
-	//tk.pf.name = "kim";
 	strcpy(tk.pf.name, "kim");
 	tk.pf.age = 27;
 	tk.pf.height = 175.5;
@@ -49,7 +48,6 @@ int main(void)
 	printf("학번 : %d\n", tk.id);
 	printf("성적 : %.1lf\n", tk.grade);
 	free(tk.pf.intro);
-
 
 	system("pause");
 	return EXIT_SUCCESS;
