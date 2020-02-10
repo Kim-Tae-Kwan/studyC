@@ -105,6 +105,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CH18", "CH18", "{EC9BF8FF-4
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileInOutApp", "FileInOutApp\FileInOutApp.vcxproj", "{B1B6DBC0-D8CF-4250-BD64-176C30240D8F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F38034EF-053B-4F39-811A-56EACCEE87B3}"
+	ProjectSection(SolutionItems) = preProject
+		a.txt = a.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

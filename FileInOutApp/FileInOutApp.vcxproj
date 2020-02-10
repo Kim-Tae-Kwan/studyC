@@ -21,6 +21,9 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="a.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{b1b6dbc0-d8cf-4250-bd64-176c30240d8f}</ProjectGuid>
