@@ -19,35 +19,35 @@ int main(void)
 
 	 printf("학번 : %d, 이름 : %s %d\n", aa.num, aa.name);*/
 
-	/*double radius, area;
+	 /*double radius, area;
 
-	printf("반지름을 입력하세요(10이하) : ");
-	scanf("%lf", &radius);
-	area = PI * radius * radius;
-	if (area > LIMIT) ERR_PRN;
-	else
-	{
-		printf("원의 면적 : %.2lf(%s)\n", area, MSG);
-	}*/
+	 printf("반지름을 입력하세요(10이하) : ");
+	 scanf("%lf", &radius);
+	 area = PI * radius * radius;
+	 if (area > LIMIT) ERR_PRN;
+	 else
+	 {
+		 printf("원의 면적 : %.2lf(%s)\n", area, MSG);
+	 }*/
 
-	/*int a = 10, b = 20;
-	double x = 1.2, y = 0.3;
-	int res;
+	 /*int a = 10, b = 20;
+	 double x = 1.2, y = 0.3;
+	 int res;
 
-	
-	printf("a+b : %d\n", SUM(a, b));
-	printf("x+y : %.1lf\n", SUM(x, a));
-	res = 30 / MUL(x, y);
 
-	
-	printf("30/(2*5) : %d\n", res);*/
+	 printf("a+b : %d\n", SUM(a, b));
+	 printf("x+y : %.1lf\n", SUM(x, a));
+	 res = 30 / MUL(x, y);
 
-	/*int a1, a2;
 
-	NAME_CAT(a, 1) = 10;
-	NAME_CAT(a, 2) = 20;
-	PRINT_EXPR(a1 + a2);
-	PRINT_EXPR(a2 - a1);*/
+	 printf("30/(2*5) : %d\n", res);*/
+
+	 /*int a1, a2;
+
+	 NAME_CAT(a, 1) = 10;
+	 NAME_CAT(a, 2) = 20;
+	 PRINT_EXPR(a1 + a2);
+	 PRINT_EXPR(a2 - a1);*/
 
 	int max;
 

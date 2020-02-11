@@ -8,16 +8,8 @@
 #define MUL(a,b) (a*b)
 #define VER 7
 #define BIT 16
-
-
-
-
 #define PRINT_EXPR(x) printf(#x " = %d\n",x)
 #define NAME_CAT(x,y) (x##y)
-
-
-
-
 
 struct student {
 
