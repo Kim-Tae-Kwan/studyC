@@ -18,7 +18,7 @@ typedef struct Business_card
 	int phon_number;
 	char email[80];
 } card;
-
+//
 int index = 0;
 int count = 0;
 card input_business_card();
